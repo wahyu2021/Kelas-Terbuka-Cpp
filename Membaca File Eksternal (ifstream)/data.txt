@@ -1,0 +1,10 @@
+ini adalah file eskternal.
+dan ini adalah baris ke-dua.
+
+data
+No  Nama
+1   wahyu
+2   farhan
+3   kin
+4   dhea
+5   raihan

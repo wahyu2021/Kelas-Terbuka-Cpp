@@ -1,0 +1,66 @@
+Structured English/kalimat deskriptif
+
+Algoritma Menyimpanan_Dan_Menarik_Uang_Di_Bank_Melalui_Teller
+{Menyimpan dan menarik uang melalui teller. Algoritma menerima masukan berupa nama, nomor rekening, jumlah uang, pilihan, nomor KTP dan jumlah uang yang ditarik. Menampilkan ke layar bukti penyimpanan atau penarikan}
+
+Deklarasi:
+    nama, pilihan, struk: string {tipe data yang merupakan kumpulan character}
+    noRek, uangYangDitarik, nmrKTP, jumlahUang, noAntrian, sisaSaldo: integer {tipe data yang merupakan bilangan bulat}
+
+
+Deskripsi:
+    baca nama, pilihan, noRek, uangYangDitarik, nmrKTP, jumlahUang, sisaSaldo, noAntrian.
+    masukkan noAntrian sama dengan 5
+    untuk i dari 1 ke 99
+            jika i sama dengan noAntrian
+                maka tampilkan "sekarang giliran anda" kemudian masukkan pilihan
+                        jika pilihan sama dengan "penarikan"
+                            maka masukkan noRek nmrKTP, uangYangDitarik
+                            sisaSaldo dikurangin uangYangDitarik kemudian masukkan ke dalam variabel sisaSaldo
+                            tampilkan struk penarikan dan sisaSaldo
+                        selainnya
+                            maka masukkan nama, noRek, jumlahUang.
+                            jumlahUang ditambah sisaSaldo kemudian dimasukkan ke dalam variabel sisaSaldo.
+                            tampilkan struk penyetoran dan sisaSaldo
+                keluar dari pengulangan
+            selainnya
+                maka tampilkan "belum giliran anda"
+        setiap pengulangan i ditambah 1 //i++
+    selesai
+
+Pseudocode
+Algoritma Menyimpanan_Dan_Menarik_Uang_Di_Bank_Melalui_Teller
+{Menyimpan dan menarik uang melalui teller. Algoritma menerima masukan berupa nama, nomor rekening, jumlah uang, pilihan, nomor KTP dan jumlah uang yang ditarik. Menampilkan ke layar bukti penyimpanan atau penarikan}
+
+Deklarasi:
+    nama, pilihan, struk: string {tipe data yang merupakan kumpulan character}
+    noRek, uangYangDitarik, nmrKTP, jumlahUang, noAntrian, sisaSaldo: integer {tipe data yang merupakan bilangan bulat}
+
+Deskripsi:
+    mulai
+    read nama, pilihan, noRek, uangYangDitarik, nmrKTP, jumlahUang, sisaSaldo.
+    noAntrian = 5
+    Do i = 1 to 99
+        if i == noAntrian then
+        pilihan = ""
+            if pilihan == "penarikan" then 
+                noRek = ""
+                nmrKTP = ""
+                uangYangDitarik = ""
+                sisaSaldo = sisaSaldo - uangYangDitarik
+                write(sisaSaldo dan struk)
+                i = 99
+            else 
+                nama = "" 
+                noRek = "" 
+                jumlahUang = ""
+                sisaSaldo = sisaSaldo + jumlahUang
+                write(sisaSaldo dan struk)
+                i = 99
+            endif
+        else
+            write("belum giliran anda")
+        endif
+        i++ // i = i + 1
+    enddo
+    selesai
